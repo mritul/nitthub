@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.appwrap {
+  height: 100vh;
+  transition: 0.5s ease;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Toggle class to prevent scroll when sidebar is active */
+.hideScroll {
+  overflow: hidden;
+}
+
+/* Toggling class to change background when sidebar appears */
+.appwrapBGchange {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+}
+
+/* Header  */
+
+.mainHeader {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 10px;
+  font-size: 40px;
+  color: #7634b8;
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: none;
+}
+
+span {
+  color: #9e97a5;
+}
+
+.navlinks {
+  text-decoration: none;
+  color: #565656;
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+
+.navlinks:hover {
+  background-color: #cfcfcf;
+  transition: 0.5s ease;
+}
+
+#shareBtn {
+  border: 3px solid #7634b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#shareBtn:hover {
+  background-color: #7634b8;
+  color: white;
+  transition: 0.5s ease;
+}
+#shareBtn a {
+  text-decoration: none;
+}
+
+/* #shareBtn a:hover {
+  color: white;
+  transition: 0.5s ease;
+} */
+
+#hamMenu {
+  display: none;
+  background: none;
+  border-width: 0;
+}
+
+#hamMenu i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 879px) {
+  .navlinks {
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  #hamMenu {
+    display: block;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .navlinks,
+  #shareBtn {
+    display: none;
+  }
+
+  .showSidebarLinks {
+    display: block;
+  }
+}
+
+/* Sidebar  */
+
+.sidebar {
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.logoContainer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vh auto;
+}
+
+.logoContainer h1 {
+  font-size: 20px;
+}
+
+.sidebar nav {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar nav a {
+  margin-bottom: 30px;
+}
+
+/* This is share button with exact same properties just put under another class */
+.asideShare {
+  border: 3px solid #7634b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-bottom: 50px;
+}
+
+.asideShare:hover {
+  background-color: #7634b8;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.asideShare a {
+  color: black;
+}
+
+#close {
+  background: none;
+  outline: none;
+  border-width: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+  transition: ease 1s;
+}
+
+/* JS class to make sidebar appear onclick of button */
+.show {
+  transform: translateX(0);
+  transition: ease 1s;
+}
+
+/* Main section */
+.container {
+  height: auto;
+  width: 100vw;
+  margin-top: 40px;
+}
+
+.card {
+  width: 100vw;
+  height: 50vh;
+  background-color: rgba(184, 128, 240, 0.137);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -2;
+}
+/* 4n-1 because underline div is also a child */
+.card:nth-child(4n-1) {
+  background-color: white;
+}
+
+.card img {
+  height: auto;
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+.card svg {
+  width: 35%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.underline {
+  width: 10%;
+  height: 2px;
+  background: linear-gradient(252.94deg, #6c63ff 22.81%, #7634b8 81.72%);
+  border-radius: 20px;
+  margin: 40px auto;
+}
+
+.textHolder {
+  width: 50%;
+  /* border-left: 2px solid black; */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textHolder h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #7634b8;
+}
+
+.textHolder p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.textHolder h1,
+.textHolder p,
+.textHolder a {
+  margin-bottom: 30px;
+}
+
+.diveInBtn {
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-width: 0;
+  border: 3px solid #f86d70;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 12px;
+}
+
+.diveInBtn:hover {
+  background-color: #f86d70;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 618px) {
+  .card {
+    flex-direction: column;
+    justify-content: start;
+    height: 70vh;
+    padding-top: 20px;
+  }
+  /* 4n-1 because underline div is also a child  and this query is to make sure in mobile the svg/image stays at top*/
+  .card:nth-child(4n-1) {
+    flex-direction: column-reverse;
+  }
+
+  .textHolder {
+    width: 90%;
+  }
+
+  .textHolder h1 {
+    font-size: 30px;
+  }
+
+  .textHolder p {
+    font-size: 20px;
+  }
+
+  .diveInBtn {
+    width: 180px;
+  }
+}

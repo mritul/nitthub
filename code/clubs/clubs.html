@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="icon" type="image/x-icon" href="../../resources/favicons/fav.png">
+    <script
+      src="https://kit.fontawesome.com/7779a82539.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="appwrap">
+      <header class="mainHeader animate__animated animate__fadeIn">
+        <a href="../landingPage/index.html" class="logo">NITT<span>HUB</span></a href="index.html">
+        <a href="../landingPage/index.html" class="navlinks">Home</a>
+        <a href="../aboutPage/about.html" class="navlinks">About</a>
+        <a href="../navPage/navigation.html" class="navlinks">Navigate</a>
+        <a href="../sharePage/share.html"><button id="shareBtn">Share</button></a>
+        <button id="hamMenu"><i class="fa-solid fa-bars"></i></button>
+      </header>
+      <div class="container">
+        <!--Computing clubs-->
+        <section class="verticalBlocks first"> <!--first class is to give 85vh just for the first set of clubs-->
+          <div class="horizontalCard titleCard first">  <!--titleCard class is for the club category page as it has a different orientation of elements-->
+            <h1 class="clubCategory">Computing Clubs</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z"/></svg>
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--Spider-->
+          <div class="childCard first"> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/spider.jfif">
+            <div class="textHolder">
+              <h1>Spider R & D</h1>
+              <p>Spider, the Research and Development Club of NIT Trichy is a group of people enthusiastic about technology and innovation</p>
+              <a href="https://spider.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Delta-->
+          <div class="childCard first"> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/deltaLogo.png">
+            <div class="textHolder">
+              <h1>Delta Force Club</h1>
+              <p>A close knit group of computer science enthusiasts that enjoy coding and hope to make a difference with our software.</p>
+              <a href="https://delta.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+        
+        <!--Technical Clubs-->
+        <section class="verticalBlocks "> 
+          <div class="horizontalCard titleCard ">  
+            <h1 class="clubCategory">Technical Clubs</h1>
+            <svg id="gear" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M80.9583 54.0833C81.125 52.7499 81.25 51.4166 81.25 49.9999C81.25 48.5833 81.125 47.2499 80.9583 45.9166L89.75 39.0416C90.5417 38.4166 90.75 37.2916 90.25 36.3749L81.9167 21.9583C81.4167 21.0416 80.2917 20.7083 79.375 21.0416L69 25.2083C66.8333 23.5416 64.5 22.1666 61.9583 21.1249L60.375 10.0833C60.25 9.08325 59.375 8.33325 58.3333 8.33325H41.6667C40.625 8.33325 39.75 9.08325 39.625 10.0833L38.0417 21.1249C35.5 22.1666 33.1667 23.5833 31 25.2083L20.625 21.0416C19.6667 20.6666 18.5833 21.0416 18.0833 21.9583L9.75 36.3749C9.20833 37.2916 9.45833 38.4166 10.25 39.0416L19.0417 45.9166C18.875 47.2499 18.75 48.6249 18.75 49.9999C18.75 51.3749 18.875 52.7499 19.0417 54.0833L10.25 60.9583C9.45833 61.5833 9.25 62.7083 9.75 63.6249L18.0833 78.0416C18.5833 78.9583 19.7083 79.2916 20.625 78.9583L31 74.7916C33.1667 76.4583 35.5 77.8333 38.0417 78.8749L39.625 89.9166C39.75 90.9166 40.625 91.6666 41.6667 91.6666H58.3333C59.375 91.6666 60.25 90.9166 60.375 89.9166L61.9583 78.8749C64.5 77.8333 66.8333 76.4166 69 74.7916L79.375 78.9583C80.3333 79.3333 81.4167 78.9583 81.9167 78.0416L90.25 63.6249C90.75 62.7083 90.5417 61.5833 89.75 60.9583L80.9583 54.0833ZM50 64.5833C41.9583 64.5833 35.4167 58.0416 35.4167 49.9999C35.4167 41.9583 41.9583 35.4166 50 35.4166C58.0417 35.4166 64.5833 41.9583 64.5833 49.9999C64.5833 58.0416 58.0417 64.5833 50 64.5833Z" fill="black"/>
+              </svg>
+              
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--RMI-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/rmilogo.png">
+            <div class="textHolder">
+              <h1>Robotics and Machine Intelligence(RMI)</h1>
+              <p>Robotics and Machine Intelligence (RMI), is the official robotics and technical research club of NIT Trichy.</p>
+              <a href="https://rmi.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--DC-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/DClogo.png">
+            <div class="textHolder">
+              <h1>Designers Consortium</h1>
+              <p>A set of forty-two aspiring design enthusiasts with a perpetual thrust for innovation from various engineering backgrounds</p>
+              <a href="https://www.dcnitt.org/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--PSI-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/psi-logo.png">
+            <div class="textHolder">
+              <h1>PSI Racing</h1>
+              <p>A team of students spanning all four years of college education and all departments united by a shared love: the love for automobiles.</p>
+              <a href="https://psi.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!--Cultural clubs-->
+        <section class="verticalBlocks "> 
+          <div class="horizontalCard titleCard ">  <!--titleCard class is for the club category page as it has a different orientation of elements-->
+            <h1 class="clubCategory">Cultural Clubs</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M480 32C497.7 32 512 46.33 512 64C512 81.67 497.7 96 480 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H480zM32 128H480V416C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H352V352C352 298.1 309 256 256 256C202.1 256 160 298.1 160 352V480H32C14.33 480 0 465.7 0 448C0 430.3 14.33 416 32 416V128z"/></svg>
+            
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--SPIC-MACAY-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>SPIC-MACAY</h1> 
+              <p>The flag bearer for the promotion of the preservation of Indian culture on campus</p>
+              <a href="https://www.instagram.com/accounts/login/?next=/spicmacay_nitt/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Amruthavarshini-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Amruthavarshini</h1>
+              <p>Created with the intent of raising awareness about Carnatic music within the NIT-T campus and bringing together all its Carnatic music enthusiasts</p>
+              <a href="https://www.youtube.com/c/amruthavarshiniNITT" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+
+
+        <!--Social services-->
+        <section class="verticalBlocks "> 
+          <div class="horizontalCard titleCard ">  <!--titleCard class is for the club category page as it has a different orientation of elements-->
+            <h1 class="clubCategory">Social services</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z"/></svg>
+              
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--National Service Scheme-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>National Service Scheme</h1> 
+              <a href="https://www.nitt.edu/home/students/clubsnassocs/social/nss/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--National Cadet Corps-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>National Cadet Corps</h1>
+              <a href="https://www.nitt.edu/home/students/clubsnassocs/social/ncc/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Omega Science and Spirituality Club-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Omega Science and Spirituality Club</h1>
+              <a href="https://nitt.wiki/index.php/Pupil_for_Pupil_Committee_(PPC)" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Social Responsibility Club-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Social Responsibility Club</h1>
+              <a href="https://www.nitt.edu/home/students/clubsnassocs/social/ncc/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--The Wild Life Club (Prakruthi )-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>The Wild Life Club (Prakruthi )</h1>
+              <a href="https://nitt.wiki/index.php/Prakruti" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--TaskForce-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>TaskForce</h1>
+              <a href="https://taskforce.nitt.edu" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Teaching Club (IGNITTE)-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Teaching Club (IGNITTE)</h1>
+              <a href="https://ignitte.in" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!--Language Groups-->
+        <section class="verticalBlocks"> 
+          <div class="horizontalCard titleCard ">  <!--titleCard class is for the club category page as it has a different orientation of elements-->
+            <h1 class="clubCategory">Language Groups</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448 164C459 164 468 172.1 468 184V188H528C539 188 548 196.1 548 208C548 219 539 228 528 228H526L524.4 232.5C515.5 256.1 501.9 279.1 484.7 297.9C485.6 298.4 486.5 298.1 487.4 299.5L506.3 310.8C515.8 316.5 518.8 328.8 513.1 338.3C507.5 347.8 495.2 350.8 485.7 345.1L466.8 333.8C462.4 331.1 457.1 328.3 453.7 325.3C443.2 332.8 431.8 339.3 419.8 344.7L416.1 346.3C406 350.8 394.2 346.2 389.7 336.1C385.2 326 389.8 314.2 399.9 309.7L403.5 308.1C409.9 305.2 416.1 301.1 422 298.3L409.9 286.1C402 278.3 402 265.7 409.9 257.9C417.7 250 430.3 250 438.1 257.9L452.7 272.4L453.3 272.1C465.7 259.9 475.8 244.7 483.1 227.1H376C364.1 227.1 356 219 356 207.1C356 196.1 364.1 187.1 376 187.1H428V183.1C428 172.1 436.1 163.1 448 163.1L448 164zM160 233.2L179 276H140.1L160 233.2zM0 128C0 92.65 28.65 64 64 64H576C611.3 64 640 92.65 640 128V384C640 419.3 611.3 448 576 448H64C28.65 448 0 419.3 0 384V128zM320 384H576V128H320V384zM178.3 175.9C175.1 168.7 167.9 164 160 164C152.1 164 144.9 168.7 141.7 175.9L77.72 319.9C73.24 329.1 77.78 341.8 87.88 346.3C97.97 350.8 109.8 346.2 114.3 336.1L123.2 315.1H196.8L205.7 336.1C210.2 346.2 222 350.8 232.1 346.3C242.2 341.8 246.8 329.1 242.3 319.9L178.3 175.9z"/></svg>
+              
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--Tamil Mandram-->
+          <div class="childCard"> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Tamil Mandram</h1> 
+              <p>A group of Tamil enthusiasts passionate about the language.</p>
+              <a href="https://www.nitt.edu/home/students/clubsnassocs/language/tamil/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Aayaam-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Aayaam</h1>
+              <p>The Hindi Literary and Cultural Society of NIT-T</p>
+              <a href="https://www.nitt.edu/home/students/clubsnassocs/language/aayaam/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Akshara-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Akshara</h1>
+              <p>A non-profit Telugu literature society of NIT-T engaging people who have an interest and passion in Telugu literature and culture.</p>
+              <a href="https://www.aksharanitt.com/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Balls By Picasso-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Balls By Picasso</h1>
+              <p>The English Literary Society of NITT has no doubt a very odd name to go by, but equally eccentric are the geniuses that are a part of it.</p>
+              <a href="https://www.nitt.edu/home/students/clubsnassocs/language/ballsbypicasso/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+
+
+        <!--Alumni Groups-->
+        <section class="verticalBlocks ">
+          <div class="horizontalCard titleCard ">  <!--titleCard class is for the club category page as it has a different orientation of elements-->
+            <h1 class="clubCategory">Alumni Groups</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z"/></svg>
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--RECAL-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>RECAL</h1> 
+              <p>The official alumni group of NIT TRICHY.</p>
+              <a href="https://alumni.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!--Fine arts and media clubs-->
+        <section class="verticalBlocks "> 
+          <div class="horizontalCard titleCard ">  
+            <h1 class="clubCategory">Fine Arts and Media Clubs</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M206.9 245.1C171 255.6 146.8 286.4 149.3 319.3C160.7 306.5 178.1 295.5 199.3 288.4L206.9 245.1zM95.78 294.9L64.11 115.5C63.74 113.9 64.37 112.9 64.37 112.9c57.75-32.13 123.1-48.99 189-48.99c1.625 0 3.113 .0745 4.738 .0745c13.1-13.5 31.75-22.75 51.62-26c18.87-3 38.12-4.5 57.25-5.25c-9.999-14-24.47-24.27-41.84-27.02c-23.87-3.875-47.9-5.732-71.77-5.732c-76.74 0-152.4 19.45-220.1 57.07C9.021 70.57-3.853 98.5 1.021 126.6L32.77 306c14.25 80.5 136.3 142 204.5 142c3.625 0 6.777-.2979 10.03-.6729c-13.5-17.13-28.1-40.5-39.5-67.63C160.1 366.8 101.7 328 95.78 294.9zM193.4 157.6C192.6 153.4 191.1 149.7 189.3 146.2c-8.249 8.875-20.62 15.75-35.25 18.37c-14.62 2.5-28.75 .376-39.5-5.249c-.5 4-.6249 7.998 .125 12.12c3.75 21.75 24.5 36.24 46.25 32.37C182.6 200.1 197.3 179.3 193.4 157.6zM606.8 121c-88.87-49.38-191.4-67.38-291.9-51.38C287.5 73.1 265.8 95.85 260.8 123.1L229 303.5c-15.37 87.13 95.33 196.3 158.3 207.3c62.1 11.13 204.5-53.68 219.9-140.8l31.75-179.5C643.9 162.3 631 134.4 606.8 121zM333.5 217.8c3.875-21.75 24.62-36.25 46.37-32.37c21.75 3.75 36.25 24.49 32.5 46.12c-.7499 4.125-2.25 7.873-4.125 11.5c-8.249-9-20.62-15.75-35.25-18.37c-14.75-2.625-28.75-.3759-39.5 5.124C332.1 225.9 332.9 221.9 333.5 217.8zM403.1 416.5c-55.62-9.875-93.49-59.23-88.99-112.1c20.62 25.63 56.25 46.24 99.49 53.87c43.25 7.625 83.74 .3781 111.9-16.62C512.2 392.7 459.7 426.3 403.1 416.5zM534.4 265.2c-8.249-8.875-20.75-15.75-35.37-18.37c-14.62-2.5-28.62-.3759-39.5 5.249c-.5-4-.625-7.998 .125-12.12c3.875-21.75 24.62-36.25 46.37-32.37c21.75 3.875 36.25 24.49 32.37 46.24C537.6 257.9 536.1 261.7 534.4 265.2z"/></svg>
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+          <!--Music Troupe-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Music Troupe </h1>
+              <p>The Western and Classical Music Club </p>
+              <a href="https://nitt.wiki/index.php/Music_Troupe_NIT_Trichy" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Thespians' Society-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Thespians' Society</h1>
+              <p>The Dramatics Club</p>
+              <a href="https://www.dcnitt.org/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Dance Troupe-->
+          <div class="childCard"> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Dance Troupe</h1>
+              <p>The Eastern and Western Dance Club</p>
+              <a href="https://www.instagram.com/accounts/login/?next=/nitt_dt/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Fine Arts Club-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Fine Arts Club</h1>
+              <p>Promotes art, painting and creativity.</p>
+              <a href="https://nitt.wiki/index.php/Fine_Arts_Society" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Pixelbug-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/pixelBug.jfif">
+            <div class="textHolder">
+              <h1>Pixelbug</h1>
+              <p>The official photography and videography club of NITT</p>
+              <a href="https://pixelbugnitt.com/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Film Society-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/filmSociety.png">
+            <div class="textHolder">
+              <h1>Film Society</h1>
+              <p>The Club for Film enthusiast and short-film makers</p>
+              <a href="https://nitt.wiki/index.php?title=Film_Society_of_NIT_Trichy&mobileaction=toggle_view_desktop" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--The Defence & Civil Club -->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Lakshya</h1>
+              <p>The Defence & Civil Club</p>
+              <a href="https://www.instagram.com/accounts/login/?next=/lakshya_nitt/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Athenaeum-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Athenaeum </h1>
+              <p>The Political Science and MUN club of NIT Trichy.</p>
+              <a href="https://nitt.wiki/index.php/Athenaeum" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <!--Misc clubs-->
+        <section class="verticalBlocks "> 
+          <div class="horizontalCard titleCard ">  
+            <h1 class="clubCategory">Other Clubs</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 7.251C507.7 13.33 512 22.41 512 31.1V175.1C512 202.5 483.3 223.1 447.1 223.1C412.7 223.1 383.1 202.5 383.1 175.1C383.1 149.5 412.7 127.1 447.1 127.1V71.03L351.1 90.23V207.1C351.1 234.5 323.3 255.1 287.1 255.1C252.7 255.1 223.1 234.5 223.1 207.1C223.1 181.5 252.7 159.1 287.1 159.1V63.1C287.1 48.74 298.8 35.61 313.7 32.62L473.7 .6198C483.1-1.261 492.9 1.173 500.3 7.251H500.3zM74.66 303.1L86.5 286.2C92.43 277.3 102.4 271.1 113.1 271.1H174.9C185.6 271.1 195.6 277.3 201.5 286.2L213.3 303.1H239.1C266.5 303.1 287.1 325.5 287.1 351.1V463.1C287.1 490.5 266.5 511.1 239.1 511.1H47.1C21.49 511.1-.0019 490.5-.0019 463.1V351.1C-.0019 325.5 21.49 303.1 47.1 303.1H74.66zM143.1 359.1C117.5 359.1 95.1 381.5 95.1 407.1C95.1 434.5 117.5 455.1 143.1 455.1C170.5 455.1 191.1 434.5 191.1 407.1C191.1 381.5 170.5 359.1 143.1 359.1zM440.3 367.1H496C502.7 367.1 508.6 372.1 510.1 378.4C513.3 384.6 511.6 391.7 506.5 396L378.5 508C372.9 512.1 364.6 513.3 358.6 508.9C352.6 504.6 350.3 496.6 353.3 489.7L391.7 399.1H336C329.3 399.1 323.4 395.9 321 389.6C318.7 383.4 320.4 376.3 325.5 371.1L453.5 259.1C459.1 255 467.4 254.7 473.4 259.1C479.4 263.4 481.6 271.4 478.7 278.3L440.3 367.1zM116.7 219.1L19.85 119.2C-8.112 90.26-6.614 42.31 24.85 15.34C51.82-8.137 93.26-3.642 118.2 21.83L128.2 32.32L137.7 21.83C162.7-3.642 203.6-8.137 231.6 15.34C262.6 42.31 264.1 90.26 236.1 119.2L139.7 219.1C133.2 225.6 122.7 225.6 116.7 219.1H116.7z"/></svg>
+              
+            <p class="instruction">Swipe <i class="fa-solid fa-up-down"></i> to change category</p>     
+            <p class="instruction">Swipe <i class="fa-solid fa-left-right"></i> to see the clubs</p>     
+          </div>
+         <!--Graphique-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/graphiquelogo.png">
+            <div class="textHolder">
+              <h1>Graphique</h1>
+              <p>The official design club of NIT Trichy.</p>
+              <a href="https://graphique.club/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Nakshatra-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/nakshatralogo.png">
+            <div class="textHolder">
+              <h1>Nakshatra</h1>
+              <p>The Astronomy and Science club at National Institute of Technology, Trichy (NITT)</p>
+              <a href="https://nakshatra.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--3D Aeromodelling-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/3daerologo.png">
+            <div class="textHolder">
+              <h1>3rd Dimension Aeromodelling</h1>
+              <p>Design and develop a span of models varying from Aerodynamic gliders to Autonomous Drones</p>
+              <a href="https://3d.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Maximus-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <img src="../../resources/clubs/maximusLogo.jfif">
+            <div class="textHolder">
+              <h1>Maximus - Math Society of NITTs</h1>
+              <p>Aims to inculcate a passion for Mathematics among the Engineering-driven minds of the college.</p>
+              <a href="https://www.instagram.com/maximus_nitt/?hl=en" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--The Freudian Paradox-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>The Freudian Paradox</h1>
+              <p>The Cognitive Science Club of NIT Trichy and, the first Cognitive Science Club of India.</p>
+              <a href="https://www.instagram.com/freudianparadox_nitt/?hl=en" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Builders' Hive-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Builders' Hive</h1>
+              <p>Builders'​ Hive is the Social Innovation and Engineering club of NIT-Trichy. </p>
+              <a href="https://www.facebook.com/NITTHive/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Entrepreneurship Cell-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>Entrepreneurship Cell</h1>
+              <p>A non-profit, student-run organisation dedicated to fostering an entrepreneurial spirit and incubating ideas into startups </p>
+              <a href="http://www.ecell-nitt.org/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Research Scholars' club-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <img src="../../resources/clubs/rsflogo.jfif">
+              <h1>Research Scholars' club</h1>
+              <p>A forum functioning for the welfare of researchers since 2015</p>
+              <a href="https://rsf.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--180 DC NIT Trichy-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <img src="../../resources/clubs/180deg.jfif">
+              <h1>180 DC NIT Trichy</h1>
+              <p>Provides consulting services to startups and non-profits to unleash their full potential and expand their services</p>
+              <a href="https://www.180dcnitt.com/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--Sigma-->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <img src="../../resources/clubs/sigmaLogo.png">
+              <h1>Sigma</h1>
+              <p>Provides a platform where students can share a mutual interest in business and characteristic enthusiasm to succeed.</p>
+              <a href="https://sigma.nitt.edu/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+          <!--ProfNITT -->
+          <div class="childCard "> <!--childCard are each of the clubs belonging to club category-->
+            <div class="textHolder">
+              <h1>ProfNITT</h1>
+              <p>Aims to empower its members by increasing their knowledge base in finance-related domains, via various interactions, discussions and industry projects.</p>
+              <a href="https://profnitt.com/" target="_blank"><button class="visitBtn">Visit Now</button></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <header class="logoContainer">
+        <h1 class="logo">NITT<span>HUB</span></h1>
+      </header>
+      <nav>
+        <!-- showSidebarLinks class is to make links display:block as we hide it while hamburger menu comes up in small screen -->
+        <a href="../landingPage/index.html" class="navlinks showSidebarLinks">Home</a>
+        <a href="../aboutPage/about.html" class="navlinks showSidebarLinks">About</a>
+        <a href="../navPage/navigation.html" class="navlinks showSidebarLinks">Navigate</a>
+        <a href="../sharePage/share.html"><button class="asideShare">Share</button></a>
+        <button id="close">X</button>
+      </nav>
+    </aside>
+    <script src="app.js"></script>
+  </body>
+</html>

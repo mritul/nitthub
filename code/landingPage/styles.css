@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.appwrap {
+  height: 100vh;
+  transition: 0.5s ease;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Toggle class to prevent scroll when sidebar is active */
+.hideScroll {
+  overflow: hidden;
+}
+
+/* Toggling class to change background when sidebar appears */
+.appwrapBGchange {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+}
+
+/* Header  */
+
+.mainHeader {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 10px;
+  font-size: 40px;
+  color: #7634b8;
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: none;
+}
+
+span {
+  color: #9e97a5;
+}
+
+.navlinks {
+  text-decoration: none;
+  color: #565656;
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+
+.navlinks:hover {
+  background-color: #cfcfcf;
+  transition: 0.5s ease;
+}
+
+#shareBtn {
+  border: 3px solid #7634b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#shareBtn:hover {
+  background-color: #7634b8;
+  color: white;
+  transition: 0.5s ease;
+}
+#shareBtn a {
+  text-decoration: none;
+}
+
+/* #shareBtn a:hover {
+  color: white;
+  transition: 0.5s ease;
+} */
+
+#hamMenu {
+  display: none;
+  background: none;
+  border-width: 0;
+}
+
+#hamMenu i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 879px) {
+  .navlinks {
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  #hamMenu {
+    display: block;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .navlinks,
+  #shareBtn {
+    display: none;
+  }
+
+  .showSidebarLinks {
+    display: block;
+  }
+}
+
+/* Sidebar  */
+
+.sidebar {
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.logoContainer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vh auto;
+}
+
+.logoContainer h1 {
+  font-size: 20px;
+}
+
+.sidebar nav {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar nav a {
+  margin-bottom: 30px;
+}
+
+/* This is share button with exact same properties just put under another class */
+.asideShare {
+  border: 3px solid #7634b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-bottom: 50px;
+}
+
+.asideShare:hover {
+  background-color: #7634b8;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.asideShare a {
+  color: black;
+  /* transition: 0.5s ease; */
+}
+
+/* .asideShare a:hover {
+  color: white;
+  transition: 0.5s ease;
+} */
+
+#close {
+  background: none;
+  outline: none;
+  border-width: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+  transition: ease 1s;
+}
+
+/* JS class to make it appear onclick of button */
+.show {
+  transform: translateX(0);
+  transition: ease 1s;
+}
+
+/* Main Section of Landing Page */
+
+.showcase {
+  width: 100%;
+  margin: auto;
+  /* background-color: aqua; */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+
+.showcaseSVG {
+  width: 30%;
+  height: auto;
+  /* background-color: #5a5a5a; */
+  z-index: -1;
+}
+
+.textHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  /* background-color: #cfcfcf; */
+}
+
+.textHolder h1 {
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+}
+
+.textHolder p {
+  font-size: 20px;
+  text-align: center;
+  color: #5a5a5a;
+}
+
+#exploreBtn {
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-width: 0;
+  border: 3px solid #7634b8;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#exploreBtn:hover {
+  background-color: #7634b8;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.textHolder h1,
+.textHolder p,
+.textHolder button {
+  margin: 20px;
+}
+
+#ambientSVG {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Hiding ambient svg on mobile */
+
+@media screen and (max-width: 400px) {
+  #ambientSVG {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .showcase {
+    margin-top: 5vh;
+  }
+
+  .textHolder h1 {
+    font-size: 25px;
+  }
+
+  .textHolder p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .showcase {
+    flex-direction: column;
+  }
+
+  .textHolder h1,
+  .textHolder p,
+  .textHolder button {
+    margin: 10px;
+  }
+
+  .textHolder {
+    width: 100%;
+  }
+
+  .showcaseSVG {
+    width: 100%;
+    height: 30vh;
+  }
+}

@@ -1,0 +1,446 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.appwrap {
+  height: 100vh;
+  transition: 0.5s ease;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Toggle class to prevent scroll when sidebar is active */
+.hideScroll {
+  overflow: hidden;
+}
+
+/* Toggling class to change background when sidebar appears */
+.appwrapBGchange {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+}
+
+/* Header  */
+
+.mainHeader {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 10px;
+  font-size: 40px;
+  color: #7634b8;
+  font-family: "Readex Pro", sans-serif;
+  text-decoration: none;
+}
+
+span {
+  color: #9e97a5;
+}
+
+.navlinks {
+  text-decoration: none;
+  color: #565656;
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+
+.navlinks:hover {
+  background-color: #cfcfcf;
+  transition: 0.5s ease;
+}
+
+#shareBtn {
+  border: 3px solid #7634b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#shareBtn:hover {
+  background-color: #7634b8;
+  color: white;
+  transition: 0.5s ease;
+}
+#shareBtn a {
+  text-decoration: none;
+}
+
+/* #shareBtn a:hover {
+  color: white;
+  transition: 0.5s ease;
+} */
+
+#hamMenu {
+  display: none;
+  background: none;
+  border-width: 0;
+}
+
+#hamMenu i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 879px) {
+  .navlinks {
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  #hamMenu {
+    display: block;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .navlinks,
+  #shareBtn {
+    display: none;
+  }
+
+  .showSidebarLinks {
+    display: block;
+  }
+}
+
+/* Sidebar  */
+
+.sidebar {
+  height: 100vh;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.logoContainer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4vh auto;
+}
+
+.logoContainer h1 {
+  font-size: 20px;
+}
+
+.sidebar nav {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar nav a {
+  margin-bottom: 30px;
+}
+
+/* This is share button with exact same properties just put under another class */
+.asideShare {
+  border: 3px solid #7634b8;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-bottom: 50px;
+}
+
+.asideShare:hover {
+  background-color: #7634b8;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.asideShare a {
+  color: black;
+}
+
+#close {
+  background: none;
+  outline: none;
+  border-width: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+  transition: ease 1s;
+}
+
+/* JS class to make sidebar appear onclick of button */
+.show {
+  transform: translateX(0);
+  transition: ease 1s;
+}
+
+/* Main section  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.verticalBlocks {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: auto;
+  background-color: #9e97a5;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.horizontalCard {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  flex-shrink: 0; /*Highly important to make each card extend */
+  scroll-snap-align: start;
+}
+
+/* Club Category Card */
+
+/* Spacing between every element inside the card  */
+.titleCard > * {
+  margin: 20px;
+}
+
+.titleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4d2ff;
+  border-bottom: solid 2px purple;
+}
+
+/* Title */
+
+.clubCategory {
+  font-size: 40px;
+  color: rgb(46, 46, 46);
+  text-align: center;
+}
+
+/* SVG */
+
+.horizontalCard svg {
+  width: 15%;
+  height: auto;
+}
+
+svg {
+  animation: glow ease 2s infinite;
+}
+/* Instructions */
+
+.instruction {
+  color: rgb(0, 0, 0);
+}
+
+/* Rotating gear */
+#gear {
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Club cards */
+
+.childCard {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  flex-shrink: 0; /*Highly important to make each card extend */
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.childCard img {
+  width: 20%;
+  height: auto;
+}
+
+.textHolder {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textHolder > * {
+  margin: 30px;
+}
+
+.textHolder h1 {
+  font-size: 40px;
+  background: radial-gradient(
+    318.48% 4281.85% at -75.91% 0%,
+    #001dff 0%,
+    rgba(0, 0, 0, 0) 100%,
+    rgba(0, 1, 9, 0.0340918) 100%
+  );
+  font-family: "Poppins", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.textHolder p {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+.visitBtn {
+  color: black;
+  cursor: pointer;
+  width: 200px;
+  padding: 10px 15px;
+  border-width: 0;
+  border: #7634b8 2px solid;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.visitBtn:hover {
+  color: white;
+  background: linear-gradient(92.31deg, #7634b8 3.9%, #6c63ff 111.54%);
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 921px) {
+  .textHolder h1 {
+    font-size: 40px;
+  }
+  .textHolder p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .childCard {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titleCard {
+    justify-content: start;
+  }
+
+  .clubCategory {
+    margin-top: 100px;
+  }
+
+  .childCard img {
+    width: 30%;
+  }
+  .textHolder {
+    width: 80%;
+  }
+
+  .textHolder > * {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .childCard {
+    justify-content: start;
+    align-items: center;
+  }
+  .childCard > * {
+    margin: 30px 10px;
+  }
+
+  .textHolder h1 {
+    font-size: 25px;
+  }
+
+  .textHolder p {
+    font-size: 15px;
+  }
+}
+
+/* Global properties for the cards */
+.first {
+  height: 85vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
