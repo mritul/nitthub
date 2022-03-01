@@ -7,4 +7,4 @@
 
 <br>
 
-Click [here](google.com) to visit the website.
+Click [here](https://cutt.ly/EAuU07X) to visit the website.
